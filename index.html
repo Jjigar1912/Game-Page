@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="header container">
+      <div class="d-flex align-items-center justify-content-end">
+        <img src="./Playstation_Img/logo.png" class="logo" />
+        <nav>
+          <ul class="d-flex flex-end display-none" id="nav">
+            <li>Game controllers</li>
+            <li>VR Accessories</li>
+            <li>Media Remotes</li>
+            <li>Others</li>
+          </ul>
+        </nav>
+        <div>
+          <img
+            src="./Playstation_Img/menu.png"
+            class="menu"
+            onclick="openMenu()"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="main container d-flex flex-wrap flex-column">
+      <div class="mt-150 text-center flex-basis-40">
+        <h1 class="text-sm-20">PS4 V2<br />Dualshock 4</h1>
+        <h1 class="mt-20 text-sm-15">Wireless Controller for PlayStation 4</h1>
+        <p class="mt-8 font-15">(Compatible/Generic)</p>
+        <h2 class="mt-20">$32.50</h2>
+        <button class="mt-20 btn-buy">Buy Now</button>
+      </div>
+      <div class="mt-130 position-relative flex-basis-60 controller-img">
+        <div class="box">
+          <img src="./Playstation_Img/add.png" />
+          <p>Add to Cart</p>
+        </div>
+        <img src="./Playstation_Img/controller.png" class="controller" />
+      </div>
+    </section>
+    <script>
+      let nav = document.getElementById("nav");
+      const openMenu = () => {
+        if (nav.classList.contains("display-none"))
+          nav.classList.remove("display-none");
+        else nav.classList.add("display-none");
+      };
+    </script>
+  </body>
+</html>

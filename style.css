@@ -1,0 +1,249 @@
+*{
+    margin : 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    max-width: 1200px;
+    margin: auto;
+    padding-inline : 15px;
+    padding-block : 20px;
+}
+.logo
+{
+    width : 70px;
+}
+.menu
+{
+    width : 35px;
+}
+.d-flex
+{
+    display: flex;
+}
+.align-items-center
+{
+    align-items: center;
+}
+.justify-content-end
+{
+    justify-content: space-between;
+}
+nav ul li
+{
+    list-style-type: none;
+    padding-inline: 25px;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+}
+nav
+{
+    flex : 1;
+}
+.flex-basis-40
+{
+    flex-basis: 40%;
+}
+.flex-basis-60
+{
+    flex-basis: 60%;
+}
+.border
+{
+    border : 2px solid ;
+}
+.flex-end
+{
+    justify-content: flex-end;
+}
+.mt-150
+{
+    margin-top: 150px;
+}
+h1
+{
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+.main p
+{
+    color : gray;
+}
+.main h1:nth-child(2)
+{
+    font-size: 30px;
+    color : gray;
+}
+.mt-20
+{
+    margin-top: 20px;
+}
+.mt-8{
+    margin-top : 8px;
+}
+.font-15
+{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.btn-buy
+{
+    padding-inline: 40px;
+    padding-block : 10px;
+    color : white;
+    font-size: 15px;
+    border : none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: linear-gradient(to right,tomato,pink);
+}
+.btn-buy:hover
+{
+    font-weight: bold;
+}
+.flex-wrap
+{
+    flex-wrap: wrap;
+}
+.controller
+{
+    width : 100%;
+}
+.main div:nth-child(2)
+{
+    flex: 1;
+}
+.mt-130
+{
+    margin-top: 100px;
+}
+.position-relative
+{
+    position: relative;
+}
+.box
+{
+    position: absolute;
+    right : 0px;
+    left : 300px;
+    width : 500px;
+    height : 455px;
+    transform: translateX(80px);
+    background : tomato;
+    z-index : -1;
+}
+.box img
+{
+    position: absolute;
+    top : 45%;
+    right : 50px;
+}
+.box p
+{
+    color: white;
+    text-align: end;
+    margin-top: 63%;
+    margin-right : 40px;
+    font-size: 18px;
+}
+.menu{
+    display: none;
+}
+.display-none
+{
+}
+@media screen and (max-width : 700px) {
+    .flex-column
+    {
+        flex-direction: column-reverse;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .box
+    {
+        width : 300px;
+        height: 300px;
+    }
+    .display-none
+    {
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        top : 90px;
+        left : 0px;
+        width : 100%;
+        z-index: 1;
+        background: tomato;
+        color : white;
+        transition: display .2s;
+    }
+    nav ul li{
+        width : 100%;
+        text-align: start;
+        padding : 10px;
+        z-index : 1;
+    }
+
+    nav{
+        z-index : 1;
+    }
+    .main div{
+        padding : 15px;
+    }
+    .mt-130
+    {
+        margin-top: 30px;
+    }
+    .mt-150
+    {
+        margin-top : 50px;
+    }
+    .text-sm-20
+    {
+        font-size: 40px;
+    }
+    .text-sm-15
+    {
+        font-size: 20px !important;
+    }
+    .flex-basis-60
+    {
+        flex-basis: 100%;
+    }
+    .flex-basis-40
+    {
+        flex-basis: 100%;
+    }
+    .controller-img > img{
+        width : 80%;
+        background-size: cover;
+    }
+    .box
+    {
+        position: absolute;
+        right : 0px;
+        left : 300px;
+        width : 235px;
+        top : 0px;
+        height : 255px;
+        transform: translateX(-80px);
+        background : tomato;
+        z-index : -1;
+    }
+    .box img{
+        width : 30px;
+    }
+    .box p{
+        position: relative;
+        left : 35px;
+        top : 10px;
+    }
+}
